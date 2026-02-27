@@ -1,0 +1,24 @@
+{
+  "name": "redux-cli-workshop",
+  "version": "1.0.0",
+  "description": "30-minute Redux fundamentals workshop with real-time state sharing",
+  "type": "module",
+  "scripts": {
+    "server": "tsx server/server.ts",
+    "client": "tsx client/index.ts",
+    "test": "tsx client/reducer.test.ts",
+    "test:watch": "tsx --watch client/reducer.test.ts",
+    "build": "tsc"
+  },
+  "keywords": ["redux", "state-management", "workshop"],
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/ws": "^8.5.7",
+    "typescript": "^5.2.2",
+    "tsx": "^4.1.0"
+  }
+}
